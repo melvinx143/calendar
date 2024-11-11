@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minicalendar</title>
+    <h1>MINI-CALENDAR</h1>
+  </head>
+  <link rel="stylesheet" href="./mincal.css" />
+  <body>
+    <div class="total">
+      <!--CALENDAR SECTION-->
+      <span id="currentyear"></span>
+      <section class="minicalendar">
+        <div class="dayofweek">Monday</div>
+        <div class="daytoday">16</div>
+
+        <div class="monthtoday"></div>
+      </section>
+      <!------------------------->
+      <!--------TIMER SECTION-->
+      <section>
+        <div class="timersection">
+          <div id="hrsection">
+            <div class="presenthour">00</div>
+            <span>Hour</span>
+          </div>
+
+          <div id="minsection">
+            <div class="presentmin">00</div>
+            <span>Mins</span>
+          </div>
+
+          <div id="millisection">
+            <div class="presentmsec">00</div>
+            <span>Msec</span>
+          </div>
+
+          <div id="zonal">
+            <div class="zonal">AM</div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!------------------->
+    <!--SCRIPT-->
+    <script src="./mincal.js"></script>
+
+    <!------------->
+  </body>
+</html>

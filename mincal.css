@@ -1,0 +1,90 @@
+body{
+  padding:0;
+    box-sizing: border-box;
+    margin:0;
+    font-size: 25px;
+    display:flex;
+    flex-direction: column;
+}
+section{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap:4rem;
+    justify-content: center;
+    margin-bottom: 4rem;
+}
+#currentyear
+{
+font-size: 45px;    
+}
+#monthday,h1
+{
+    display:flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.minicalendar
+{
+    border:1px solid black;
+    width:400px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+   
+}
+.total
+{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.timersection
+{
+    display:flex;
+    margin-top:4rem;
+    flex-direction: row;
+    gap:4rem;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    color:#ffff;
+    text-align: center;
+}
+.timersection>div{
+    background-color:black;
+    padding:20px;
+}
+.presenthour,.presentmin,.presentms
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.dayofweek,.monthtoday
+{
+    background-color:#ff0000;
+    width:360px;
+    color:#ffff;
+    font-weight: bold;
+    text-align: center;
+    padding:20px;
+}
+@media(width<768px)
+{
+    .timersection
+    {
+        display:flex;
+        flex-direction: column;
+    }
+    .total{
+        width:390px;
+        padding:10px;
+    }
+    #hrsection,#minsection,#millisection,#zonal
+    {
+        width:250px;
+    }
+}
